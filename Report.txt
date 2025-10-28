@@ -1,0 +1,39 @@
+﻿(TASK-1)
+
+
+1))Here ,i find several code smell.They are-
+     
+    1)Long Class
+    
+    2)Long Method
+    
+    3)Premitive obsesession
+
+
+    4)Divergent change
+
+
+    5)shortgan surgery
+
+
+Here long method,long class,data clumps are bloaters type of code smell.In the class of 
+Calculator.java and Ui.java has more line so in these occures the long class code
+ smell and in the class of UI.java in the method of public double reader use double and 
+string variable directly so they are include in premitive obsessin because we know premitiveobsession is a bloters type of code smell where use the premitive type(string,double,int)etc.if want to change any code of calculator.java needed to change in the same class of another part of .so,its a code smell of Divergent change .if i want to change any part of the code of calculator.java than needed to change code of ui.java class this is a code smell of Shortgun sergery.The divergent change and shortgun sergery are change preventor type of code smell.The large class and long method is a problem if we want to add new feature in a class and method than it hard to maintain.Divergent change and shortgun sergery is a problem because if change any part of the code than needed to change another part of the code this is hard and its break the SOLID principle of open-closed principle.so the code smell make problem in code.
+
+
+
+
+                               (TASK-2)
+
+
+The principle of design pattern is called SOLID.In solid,S means Single responsibility principle that means one class can do one job.O means open close principle.open close principle means class open for extension but close for modification.In the simple java calculator app code break the two principle single responsible principle and open close principle.Because in the calculator.java class here many function work for many work that means it break the single responsibility principle and if i change any part of the code needed to change another part of the code ,not automatically change the code so it breaks the open close principle.By removing the open close principle braking problem i use the factory method design pattern..
+For implement the factory method i add a new interface name Cacc and in that present all the method which precent in calculator class...because calculator is a chield class of Calc,,so calculator implements the calc.In Calculator in line number 32 i add public double and line number 60 add public double and also add the new interface CalcC ...now the code maintain the open close principle.Now if i change in Calc interface than automitacilly change in Calculator class..so now the code proper maintain the open close principle by using the factory method.
+
+
+
+
+                               (TASK-3)
+
+
+I implement now a new feature than i add in interface Calc...If i add new feature calculator like trioperator mode than i just change in interface Calc.In line number 28 in Calculator class i add a new method enum trioperationMode and in the interface maintain this method ..so the trioperatorModes is a new feature of the code which implement by using factory method.now the code maintain solid prinple and work easily so that now it easy to maintain.
